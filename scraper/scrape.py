@@ -15,8 +15,16 @@ for li in ul.find_all('li'):
         list_of_links.append("https://www.greenbeltmd.gov" + li.find('a')['href'])
         list_of_dates = []
         list_of_dates.append(li.text)
-        list_of_dates.append(list_of_links)
-        print(list_of_dates)
+        #print(list_of_dates)
+        print(list_of_links)
+        #table = zip(list_of_dates, list_of_links)
+        #outfile = open('./reports.csv', 'w')
+        #writer = csv.writer(outfile)
+        #writer.writerows(table)
+
+
+
+    
     
         
     
