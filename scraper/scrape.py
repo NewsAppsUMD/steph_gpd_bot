@@ -1,5 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
+import csv
 
 url = 'https://www.greenbeltmd.gov/i-want-to/view/weekly-crime-report/-folder-1474'
 response = requests.get(url, headers={'User-Agent': 'Mozilla/5.0'})
@@ -9,12 +10,18 @@ html = response.content
 soup = BeautifulSoup(html, features="html.parser")
 ul = soup.find_all('ul')[-1]
 list_of_links = []
-list_of_dates = []
 for li in ul.find_all('li'):
     if li.find('a'):
         list_of_links.append("https://www.greenbeltmd.gov" + li.find('a')['href'])
-        list_of_dates
-list_of_dates = []
+        list_of_dates = []
+        list_of_dates.append(li.text)
+        list_of_dates.append(list_of_links)
+        print(list_of_dates)
+    
+        
+    
+    
+
 
 
 
