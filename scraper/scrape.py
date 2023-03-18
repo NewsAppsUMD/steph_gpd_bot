@@ -9,18 +9,25 @@ html = response.content
 
 soup = BeautifulSoup(html, features="html.parser")
 ul = soup.find_all('ul')[-1]
-list_of_links = []
-for li in ul.find_all('li'):
-    if li.find('a'):
-        list_of_links.append("https://www.greenbeltmd.gov" + li.find('a')['href'])
-        list_of_dates = []
-        list_of_dates.append(li.text)
-        #print(list_of_dates)
-        #print(list_of_links)
-        table = zip(list_of_dates, list_of_links)
-        outfile = open('./reports.csv', 'w')
-        writer = csv.writer(outfile)
-        writer.writerows(table)
+
+list_of_rows = []
+for row in ul.find_all('li'):
+    list_of_cells = []
+    for cell in row.find_all('a'):
+        if cell.find('a'):
+            list_of_cells.append(cell.text)
+            list_of_cells.append("https://www.greenbeltmd.gov" + cell.find('a')['href'])
+    text = cell.text.strip()
+    list_of_cells.append(text)
+list_of_rows.append(list_of_cells)
+print(list_of_rows)
+
+
+
+
+
+
+       
 
 
 
