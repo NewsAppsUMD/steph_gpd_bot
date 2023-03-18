@@ -16,11 +16,11 @@ for li in ul.find_all('li'):
         list_of_dates = []
         list_of_dates.append(li.text)
         #print(list_of_dates)
-        print(list_of_links)
-        #table = zip(list_of_dates, list_of_links)
-        #outfile = open('./reports.csv', 'w')
-        #writer = csv.writer(outfile)
-        #writer.writerows(table)
+        #print(list_of_links)
+        table = zip(list_of_dates, list_of_links)
+        outfile = open('./reports.csv', 'w')
+        writer = csv.writer(outfile)
+        writer.writerows(table)
 
 
 
