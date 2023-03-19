@@ -14,18 +14,21 @@ ul = soup.find_all('ul')[-1]
 list_of_rows = []
 #start my loop
 for li in ul.find_all('li'):
+    #find the a tags, which is where the info is
     for a in li.find_all('a'):
+        #set up a contain for the date and url that will go in each row
         each_row = []
         if li.find('a'):
-            print(li.text, "https://www.greenbeltmd.gov" + li.find('a')['href'])
+            #in cases where there is an a tag in the list item, put together a url for the href inside the a tag and also print out the text in that a tag (which is the date)
+            #print("https://www.greenbeltmd.gov" + li.find('a')['href'], li.text)
+            #appending the elements described in above note to each_row
+            each_row.append("https://www.greenbeltmd.gov" + li.find('a')['href'])
+            each_row.append(li.text)
+    #putting the rows in the outer container
     list_of_rows.append(each_row)
-    print(list_of_rows)
-            
-
-
         
-            
-#outfile = open('./reports.csv', 'w')
-#writer = csv.writer(outfile)
-#writer.writerows(list_of_rows)
+#broadly speaking, I know this creates a reports.csv file that puts the info from list_of_rows in table form, but I'm not sure what each line does.            
+outfile = open('./reports.csv', 'w')
+writer = csv.writer(outfile)
+writer.writerows(list_of_rows)
 
