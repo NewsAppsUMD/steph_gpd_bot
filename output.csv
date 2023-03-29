@@ -1,88 +1,46 @@
 Date,Time,Incident Type,Location,Beat,Narrative
-03/13/2023,08:16,THEFT FROM AUTO,9100 Edmonston Ct,GB2,Catalytic converter stolen from 2018 Nissan van.
-03/13/2023,09:26,VANDALISM,5900 Cherrywood Ln,GB2,"Rear driver side window on 2012 Kia Soul broken, nothing taken or damaged."
-03/13/2023,09:47,FRAUD,7900 Mandan Rd,GB3,Identity theft.
-03/13/2023,10:28,THEFT FROM AUTO,6200 Springhill Dr,GB2,Catalytic converter stolen from 2017 Chevrolet van.
-03/13/2023,11:24,ATT STOLEN VEH,5900 Cherrywood Ter,GB2,Kia Sorento had the rear passenger side window broken and the ignition popped.
-03/13/2023,11:40,SUSPICIOUS OCC AUTO,7500 Greenway Center Dr,GB3,Blue 2018 Kia Optima (MD plate: 3DL6740) stolen.
-03/13/2023,12:25,FRAUD,9100 Edmonston Ct,GB2,EBT fraud.
-03/13/2023,13:05,SHOPLIFTING,6100 Greenbelt Rd Wb,GB2,Commercial theft.
-03/13/2023,13:09,SHOPLIFTING,6000 Greenbelt Rd Wb,GB2,Commercial theft.
-03/13/2023,15:17,THEFT FROM AUTO,6100 Breezewood Dr,GB2,Catalytic converter stolen from 2020 Nissan Work Van.
-03/13/2023,16:40,VANDALISM,9000 Edmonston Rd,GB2,2008 silver BMW 128i had the back window broken.
-03/13/2023,18:06,DOMESTIC,,,Domestic.
-03/13/2023,19:23,ASSAULT REPORT,7500 Greenbelt Rd Eb,GB3,"A 14-year-old girl was walking with her family when a group of women inside a dark-coloredvehicle approached them and asked ""where were they from"". At which time a female wearing awhite jacket exited the vehicle and punched the girl in the face, arm and back. The woman gotback into the vehicle and fled the area in unknown direction. The victim did not know thewomen, and did not require any medical attention."
-03/13/2023,20:13,CHECK WELFARE,5900 Cherrywood Ter,GB2,Mental Health Diversion.
-03/14/2023,13:19,CHECK WELFARE,7600 Hanover Pkwy,GB3,Mental Health Diversion.
-03/14/2023,14:43,THEFT FROM AUTO,7800 Hanover Pkwy,GB3,All four rims and tires stolen from 2022 Nissan Sentra.
-03/14/2023,17:53,STOLEN VEH,9100 Edmonston Ct,GB2,2011 black Hyundai Sonata (MD plate: 4FG0869) stolen.
-03/14/2023,23:54,REPORTED CARJACKING,6400 Capitol Dr,GB1,"On March 14, 2023 at 11:45 pm, Greenbelt Police officers responded to the 6400 block ofCapitol Dr for an armed carjacking. The victim reported a black sedan with tinted windows pulledin front of the victim’s 2015 Hyundai Somata (NC plate: KBB4335) and two men got out. Thefirst suspect was wearing a red hoodie and a ski mask, and the second was wearing all blackand a ski mask, both were armed with black handguns. The first suspect pointed the gun at thevictim and demanded she get out of the car. Both suspects then got into the victim’s car anddrove away. A third suspect drove the black sedan but there is no description due to the car’stint."
-03/15/2023,00:51,STOLEN VEH,6000 Greenbelt Rd Wb,GB2,Blue 2020 Hyundai Accent (MD plate: 9FC2087) stolen.
-03/15/2023,08:23,FOUND,9100 Edmonston Rd,GB2,"Stolen 2021 Dodge Charger found with heavy front end, driver side and right wheel damages."
-03/15/2023,10:53,THEFT FROM AUTO,6000 Greenbelt Rd Wb,GB2,Front license plate stolen.
-03/15/2023,13:15,THEFT REPORT,7800 Hanover Pkwy,GB3,Package theft.
-03/15/2023,14:36,FRAUD,7300 Hanover Pkwy,GB3,Check fraud.
-03/15/2023,15:32,DISORDERLY,6200 Greenbelt Rd Wb,GB2,Commercial theft.
-03/15/2023,16:33,JUVENILE COMPLAINT,9200 Springhill Ln,GB2,"On March 15, 2023, Greenbelt Police officers responded to the 9200 block of Springhill Ln forthe report of juveniles smoking controlled substances. Upon arrival, officers saw a group ofteenagers in and around a gray Kia with its right rear window shattered. Once the group noticedthe officer, they ran. The officer was able to take the 15-year-old boy sitting in the driver’s seatinto custody after a short foot chase. The Kia also had damage to the steering wheel column,consistent with damages made while stealing the car. The officers contacted the owner of theKia who confirmed it had been stolen. The 15-year-old was charged with CR7-105 unlawfultaking of a Motor Vehicle and Malicious Destruction Of Property/Value Less Than $1000. The 15year old had been arrested by the Greenbelt Police Department previously, once for attempttheft of auto on February 17, 2023 and once for a robbery on October 19, 2022."
-03/15/2023,18:13
-03/16/2023,03:10
-03/16/2023,09:13
-03/16/2023,10:03
-03/16/2023,11:19
-03/16/2023,14:07
-03/16/2023,14:55
-03/16/2023,15:00
-03/16/2023,16:12
-03/16/2023,18:21
-03/16/2023,19:49
-03/16/2023,20:19
-03/16/2023,20:38
-03/16/2023,22:18
-03/17/2023,01:58
-03/17/2023,11:17
-03/17/2023,11:25
-03/17/2023,11:55
-03/17/2023,14:18
-03/17/2023,16:24
-03/17/2023,20:56
-03/18/2023,01:59
-03/18/2023,02:34
-03/18/2023,08:40
-03/18/2023,09:20
-03/18/2023,09:37
-18:13,THEFT REPORT,6000 Greenbelt Rd Wb,GB2,Commercial theft.
-03:10,ASSAULT,6000 Greenbelt Rd Wb,GB2,"Mall-security officer heard people fighting on top of the roof and a 24-year-old man fell throughthe ceiling. Officers did not locate anyone on the roof and the man was transported to a localhospital with serious injuries."
-09:13,FRAUD,8100 Lakecrest Dr,GB1,Identity theft.
-10:03,STOLEN VEH,6100 Breezewood Ct,GB2,"2020 silver Toyota Camry (MD plate: 2FF9433) stolen after it was left unlocked with the keys inthe ignition."
-11:19,DEATH REPORT,,,Death report.
-14:07,THEFT FROM AUTO,"Greenbelt Station Pkwy /South Center Dr",GB2,"Front passenger window broken, personal property stolen."
-14:55,ASSAULT REPORT,7700 Hanover Pkwy,GB3,"Victim reported two unknown middle school-aged boys approached her and asked if she hadany money. The two males the proceeded to strike the victim in the face. The victim was able topush the boys away and they ran towards the Spellman Overpass. The boys are described as ablack middle school-aged boy with a skinny build, approximately 4'8"", wearing dark clothes, andanother black middle school-aged boy withe a medium build, approximately 4'8"", also wearingdark clothes."
-15:00,SUSPICIOUS AUTO,6400 Cherrywood Ln,GB2,"Kia Optima found with the rear right window shattered and the ignition damaged. The car wastowed for safekeeping. Officers contacted the person the parking spot was assigned to, and theystated their car, a black 2017 Kia Sportage (MD plate: 5CK6868) should have been there, andreported it stolen."
-16:12,BREAK IN REPORT,6200 Springhill Dr,GB2,"Sliding glass door's glass smashed, nothing taken."
-18:21,VANDALISM,8300 Miner St,GB2,"Front passenger window broken, nothing taken."
-19:49,FRAUD,6800 Landon Ct,GB3,Identity theft.
-20:19,ASSAULT COMBINED,,,Domestic.
-20:38,REPORTED CARJACKING,7600 Greenbelt Rd Eb,GB3,"On March 16, 2023 at 8:38 pm, officers responded to the Exxon gas station for a carjacking. Thevictim reported two black males, possibly teenagers, wearing all black and ski masks, displayeda handgun and demanded the victim empty his pockets. The suspects took the victim's keys toa black Mercedes-Benz C300 (MD plate: 3CJ4778) and fled down Hanover Parkway towardsGood Luck Rd."
-22:18,VANDALISM,6000 Springhill Dr,GB2,"Rear window of vacant unit shattered, officers cleared the residence and notified management."
-01:58,T - Traffic Stop,"Southway / Sb BaltimoreWashington Pkwy OfrpSouthway",GB1,"On March 17, 2023 at 1:58 am, officers conducted a traffic stop on Southway at Route 295 fordriving without a front tag. During a probable cause search of the car, officers located a stolenRuger Security-9 handgun and 68 illegally possessed opium narcotics ready for sale. The driverwas prohibited to possess a firearm or ammunition. The driver, a 35-year-old man of CapitolHeights, MD, was was arrested on 17 charges for handgun violations, possession with intent todistribute violations and drug trafficking."
-11:17,VANDALISM,5900 Springhill Dr,GB2,2021 KIA sedan had the rear passenger tire flattened and the rear windshield broken.
-11:25,ASSAULT REPORT,,,Domestic.
-11:55,THEFT FROM AUTO,6900 Hanover Pkwy,GB3,"Driver side door handle broken, personal property stolen."
-14:18,DISORDERLY,6200 Greenbelt Rd Wb,GB2,Commercial theft.
-16:24,VANDALISM,Unit Research Rd,GB1,Plexiglass on Little Library broken.
-20:56,FOUND,7700 Greenbelt Rd Eb,GB3,"Stolen 2018 Hyundai Elantra found with the rear passenger window broken and the ignitiondamaged."
-01:59,T - Traffic Stop,"Kenilworth Ave Nb / Cap BeltIl A Hwy Sb",GB2,DUI Arrest.
-02:34,T - Traffic Stop,9100 Springhill Ln,GB2,DUI Arrest.
-08:40,THEFT FROM AUTO,9100 Springhill Ct,GB2,Steering wheel airbag stolen from 2015 Honda Accord.
-09:20,SUSPICIOUS AUTO,9100 Edmonston Ct,GB2,"2013 Kia Soul had the right rear passenger window broken and damage to the ignitionconsistent with someone attempting to steal the vehicle."
-09:37,STOLEN VEH,7500 Mandan Rd,GB3,Red Ford Focus (MD plate: 6AF9295) stolen.
-03/18/2023,09:38,THEFT FROM AUTO,7600 Greenbelt Rd Eb,GB3,Personal property stolen from car while driver was pumping gas.
-03/18/2023,10:43,THEFT FROM AUTO,8100 Mandan Ter,GB3,Personal property stolen from two unlocked cars.
-03/18/2023,12:08,ASSAULT,15 Crescent Rd,GB1,14-year-old boy assaulted by two unknown teenagers while he was outside the Youth Center.
-03/18/2023,14:36,THEFT FROM AUTO,5900 Cherrywood Ln,GB2,Steering wheel airbag stolen from 2012 Honda Civic.
-03/18/2023,17:33,THEFT FROM AUTO,9100 Springhill Ln,GB2,Steering wheel airbag stolen from 2020 Honda Accord.
-03/18/2023,19:22,THEFT REPORT,Morrison Dr / Frankfort Dr,GB3,"Victim was selling his Macbook Pro via Facebook Marketplace, a potential buyer arrived at hisresidence for the exchange, and the ""buyer"" grabbed the laptop and ran without paying for it.The suspect's Facebook was then deleted."
-03/18/2023,21:52,THEFT REPORT,7500 Greenway Center Dr,GB3,Immigration fraud scheme.
-03/18/2023,23:16,VANDALISM,9100 Springhill Ln,GB2,"Honda Accord's window broken, nothing taken."
-03/18/2023,23:21,CHECK WELFARE,6100 Springhill Ter,GB2,Mental Health Diversion.
-03/19/2023,08:52,ASSAULT COMBINED,,,Domestic.
+03/20/2023,09:38,FRAUD,9300 Edmonston Rd,GB2,EBT Fraud.
+03/20/2023,18:19,THEFT FROM AUTO,7600 Mandan Rd,GB3,Attempted theft of catalytic converter from 2008 Cadillac STS.
+03/20/2023,22:33,VANDALISM,6100 Breezewood Ct,GB2,Building vandalized by spray paint.
+03/21/2023,05:27,CHECK WELFARE,7900 Mandan Rd,GB3,Welfare check.
+03/21/2023,08:21,VANDALISM,8000 Greenbelt Station Pkwy,GB2,Three cars in parking lot had broken front passenger windows.
+03/21/2023,11:01,THEFT FROM AUTO,6100 Breezewood Ct,GB2,Front registration plate stolen.
+03/21/2023,15:22,SHOPLIFTING,7500 Greenbelt Rd Eb,GB3,Commercial theft.
+03/21/2023,17:12,FRAUD,550 Crescent Rd,GB1,Money wiring fraud.
+03/21/2023,21:24,STOLEN VEH,5800 Cherrywood Ter,GB2,White 2011 Land Rover (MD plate: 55967CK) stolen.
+03/21/2023,22:21,DOMESTIC,,,
+03/22/2023,03:25,DOMESTIC,,,
+03/22/2023,05:47,THEFT FROM AUTO,9100 Springhill Ln,GB2,"Driver-side window and windshield broken, front tire slashed."
+03/22/2023,09:24,DOA COMBINED,,,Death report.
+03/22/2023,10:12,FRAUD,9300 Edmonston Rd,GB2,Job offer money wire fraud.
+03/22/2023,14:59,CHECK WELFARE,9200 Edmonston Rd,GB2,Mental Health Diversion.
+03/22/2023,15:43,THEFT FROM AUTO,7600 Hanover Pkwy,GB3,"Steering wheel airbags stolen from a 2017 Honda Accord, a 2012 white Honda Civic, and a2015 Honda Civic."
+03/22/2023,16:17,TAMPERING,6200 Springhill Dr,GB2,"A witness saw three boys throw a brick at a car and get onto a Metro Bus. Officers were able tolocate the suspects and arrested them. They are identified as two 15-year-old boys and a 16-year-old boy."
+03/22/2023,16:24,THEFT FROM AUTO,8200 Canning Ter,GB3,Steering wheel airbag stolen from 2014 white Honda Civic.
+03/22/2023,17:09,VANDALISM,7900 Mandan Rd,GB3,Front passenger side window broken.
+03/22/2023,17:15,THEFT FROM AUTO,8200 Mandan Ct,GB3,Steering wheel airbag stolen from 2014 Honda Civic.
+03/22/2023,17:18,THEFT FROM AUTO,7700 Greenbelt Rd Eb,GB3,Steering wheel airbag stolen from 2017 Honda Civic.
+03/22/2023,19:48,THEFT REPORT,6200 Greenbelt Rd Wb,GB2,"Tip jar stolen, suspect located and banned from property."
+03/22/2023,20:11,"REPORTED CITROBBERY",9000 Breezewood Ter,GB2,"Victim reported he was followed into his residence and robbed at gunpoint by an unknown blackman wearing all black, black ski mask, dreadlocks and armed with a black handgun. Thesuspect took the victim's wallet and backpack and ran out of the apartment, getting into thepassenger side of a dark-colored crossover SUV that drove off."
+03/22/2023,23:02,MISSING PERSON,9100 Edmonston Ter,GB2,"The Greenbelt Police Department’s Criminal Investigative Unit is currently investigating a criticalmissing juvenile (age only) identified as Deandre Charles Stevenson. Deandre is a 13-year-oldAfrican American male, approximately 5’3 in height and 110 lbs. Deandre was last seen on03/22/23 at approximately 0845 hours, leaving his residence located at 9100 block ofEdmonston Terrace Greenbelt, MD. Deandre was last seen wearing a black ski mask, greenpolo, black hoodie, and tan pants."
+03/22/2023,23:33,SHOOTING,9300 Edmonston Rd,GB2,"Shots fired into residence, no injuries. No suspect information available."
+03/23/2023,06:39,VANDALISM,5900 Cherrywood Ter,GB2,Back windshield broken.
+03/23/2023,08:37,"DEATH REPORTCOMBINED",,,Death report.
+03/23/2023,11:18,STOLEN VEH,7700 Hanover Pkwy,GB3,Black 2017 Toyota Camry (Kentucky plate: 613WKC) stolen.
+03/23/2023,11:44,THEFT FROM AUTO,7600 Mandan Rd,GB3,Handicap placard stolen.
+03/23/2023,13:38,THEFT REPORT,6000 Greenbelt Rd Wb,GB2,Commercial theft.
+03/23/2023,19:27,SHOPLIFTING,6100 Greenbelt Rd Wb,GB2,Commercial theft.
+03/24/2023,06:40,ASSIST,,,Mental Health Diversion.
+03/24/2023,07:20,THEFT FROM AUTO,8200 Canning Ter,GB3,All four tires and rims stolen from 2017 Honda Accord.
+03/24/2023,08:48,THEFT FROM AUTO,7800 Walker Dr,GB1,All four tires were stolen from 2022 Honda Accord.
+03/24/2023,09:31,FRAUD,7700 Mandan Rd,GB3,Unemployment fraud.
+03/24/2023,11:12,VANDALISM,8100 Miner St,GB2,Driver side window broken.
+03/24/2023,15:22,THEFT REPORT,7400 Greenbelt Rd Eb,GB3,Commercial theft.
+03/24/2023,15:35,SHOPLIFTING,7500 Greenbelt Rd Eb,GB3,Commercial theft.
+03/25/2023,04:43,SUSPICIOUS AUTO,6000 Springhill Dr,GB2,"28-year-old man criminally cited after he was found unresponsive behind the wheel of a car withopen containers of alcohol and in possession of illegal substances."
+03/25/2023,09:40,DEATH REPORT,,,Death report.
+03/26/2023,03:21,THEFT FROM AUTO,8900 Edmonston Rd,GB2,"Passenger window broken, Title and Vehicle Registration Card stolen."
+03/26/2023,11:50,ASSAULT COMBINED,,,Domestic.
+03/26/2023,12:51,THEFT REPORT,7500 Mandan Rd,GB3,Handicap placard stolen.
+03/26/2023,18:28,T - Traffic Stop,Kenilworth Ave Nb / Crescent Rd,GB1,DUI Arrest.
+03/26/2023,21:53,VANDALISM,9100 Springhill Ln,GB2,Ford Fiesta had damage to the hood and headlight on the passenger side.

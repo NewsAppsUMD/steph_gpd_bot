@@ -2,8 +2,6 @@ import requests
 from bs4 import BeautifulSoup
 import csv
 import tabula
-import sqlite_utils
-import datasette_codespaces
 
 url = 'https://www.greenbeltmd.gov/i-want-to/view/weekly-crime-report/-folder-1474'
 response = requests.get(url, headers={'User-Agent': 'Mozilla/5.0'})
@@ -36,12 +34,14 @@ writer = csv.writer(outfile)
 writer.writerow(["url", "date"])
 writer.writerows(list_of_rows)
 
-#print(list_of_rows[0])
-
 #read pdf of newest weekly crime report
 dfs = tabula.read_pdf(list_of_rows[0][0], pages = "all")
 
 #convert that pdf into a csv file
-tabula.convert_into((list_of_rows[0][0]), 'output.csv', pages = 'all')
+tabula.convert_into(list_of_rows[0][0], "output.csv", pages = "all")
 
-sqlite-utils insert gpd_reports.db output output.csv --csv
+
+
+
+
+
