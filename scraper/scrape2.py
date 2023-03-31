@@ -12,31 +12,34 @@ html = response.content
 soup = BeautifulSoup(html, features="html.parser")
 ul = soup.find_all('ul')[-1]
 
+#inside the loop, create an empty dictionary: dict = {} and populate it with each url and date. Then append dict to your urls_with_dates
+
 #set up a container for all my records
-list_of_rows = []
+urls_with_dates = []
 #start my loop
 for li in ul.find_all('li'):
     #find the a tags, which is where the info is
     for a in li.find_all('a'):
         #set up a container for the date and url that will go in each row
-        each_row = []
+        dict={}
         if li.find('a'):
+            url = "https://www.greenbeltmd.gov" + li.find('a')['href']
+            date = a.get_text()
+            dict[('url':url, 'date':date)]
+        print(dict)
             #in cases where there is an a tag in the list item, put together a url for the href inside the a tag and also print out the text in that a tag (which is the date)
             #print("https://www.greenbeltmd.gov" + li.find('a')['href'], li.text)
-            #appending the elements described in above note to each_row
-            each_row.append("https://www.greenbeltmd.gov" + li.find('a')['href'])
-            each_row.append(li.text)
-    list_of_rows.append(each_row)
-#print(list_of_rows)
-outfile = open('./reports.csv', 'w')
-writer = csv.writer(outfile)
-writer.writerow(["url", "date"])
-writer.writerows(list_of_rows)
+            #appending the elements described in above note to dictionary
+            #dict.append("https://www.greenbeltmd.gov" + li.find('a')['href'])
+            #dict.append(li.text)
+    #urls_with_dates.append(dict)
+#print(urls_with_dates)
+#outfile = open('./reports.csv', 'w')
+#writer = csv.writer(outfile)
+#writer.writerow(["url", "date"])
+#writer.writerows(list_of_rows)
 
-dictionaries=[]
-for i in range(0, len(list_of_rows), 2):
-    dictionaries.append({'url':list_of_rows[i], 'date':list_of_rows[i+1]})
-print(dictionaries)
+
 
 
 #data=[]
