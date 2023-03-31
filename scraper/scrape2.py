@@ -23,17 +23,11 @@ for li in ul.find_all('li'):
         #set up a container for the date and url that will go in each row
         dict={}
         if li.find('a'):
-            url = "https://www.greenbeltmd.gov" + li.find('a')['href']
-            date = a.get_text()
-            dict[('url':url, 'date':date)]
-        print(dict)
-            #in cases where there is an a tag in the list item, put together a url for the href inside the a tag and also print out the text in that a tag (which is the date)
-            #print("https://www.greenbeltmd.gov" + li.find('a')['href'], li.text)
-            #appending the elements described in above note to dictionary
-            #dict.append("https://www.greenbeltmd.gov" + li.find('a')['href'])
-            #dict.append(li.text)
-    #urls_with_dates.append(dict)
-#print(urls_with_dates)
+            dict['url'] = "https://www.greenbeltmd.gov" + li.find('a')['href']
+            dict['date'] = a.get_text()
+        #print(dict)
+    urls_with_dates.append(dict)
+print(urls_with_dates)
 #outfile = open('./reports.csv', 'w')
 #writer = csv.writer(outfile)
 #writer.writerow(["url", "date"])
