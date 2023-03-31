@@ -27,17 +27,9 @@ for li in ul.find_all('li'):
             dict['date'] = a.get_text()
         #print(dict)
     urls_with_dates.append(dict)
-print(urls_with_dates)
-#outfile = open('./reports.csv', 'w')
-#writer = csv.writer(outfile)
-#writer.writerow(["url", "date"])
-#writer.writerows(list_of_rows)
+#print(urls_with_dates)
 
-
-
-
-#data=[]
-#for each in list_of_rows:
-    #df = tabula.read_pdf(each['url'], pages="all")
-    #data.append(df)
-#print(data)
+for each in urls_with_dates:
+    df = tabula.read_pdf(each['url'], pages="all")
+    tabula.convert_into(each['url'], "output.csv", pages="all")
+    #print(df)
