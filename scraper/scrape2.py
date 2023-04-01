@@ -20,7 +20,7 @@ urls_with_dates = []
 for li in ul.find_all('li'):
     #find the a tags, which is where the info is
     for a in li.find_all('a'):
-        #set up a container for the date and url that will go in each row
+        #set up a container for my dictionaries, which will include the dates and urls to put in my urls_and_dates container
         dict={}
         if li.find('a'):
             dict['url'] = "https://www.greenbeltmd.gov" + li.find('a')['href']
