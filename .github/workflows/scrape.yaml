@@ -1,9 +1,11 @@
-name: Scrape
+name: Scrape latest weekly crime reports
 
 on:
   push:
-    branches:
-      - '*'
+    push:
+  schedule:
+    - cron: "0 6 * * 2"
+  workflow_dispatch:
 
 jobs:
   scheduled:
