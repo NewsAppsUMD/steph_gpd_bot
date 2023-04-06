@@ -4,6 +4,9 @@ import tabula
 import sqlite_utils
 import datasette_codespaces
 import requests
+import os
+from slack import WebClient
+from slack.errors import SlackApiError
 
 url = 'https://www.greenbeltmd.gov/i-want-to/view/weekly-crime-report/-folder-1474'
 response = requests.get(url, headers={'User-Agent': 'Mozilla/5.0'})
@@ -33,3 +36,20 @@ for each in urls_with_dates:
     df = tabula.read_pdf(each['url'], pages="all")
     tabula.convert_into(each['url'], "output.csv", pages="all")
     #print(df)
+
+slack_token = os.environ.get('SLACK_API_TOKEN')
+
+client = WebClient(token=slack_token)
+msg = "Testing!"
+try:
+    response = client.chat_postMessage(
+        channel="slack-bots",
+        text=msg,
+        unfurl_links=True, 
+        unfurl_media=True
+    )
+    print("success!")
+except SlackApiError as e:
+    assert e.response["ok"] is False
+    assert e.response["error"]
+    print(f"Got an error: {e.response['error']}")

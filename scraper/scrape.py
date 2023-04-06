@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 import csv
 import tabula
-import pandas as pd
+
 
 url = 'https://www.greenbeltmd.gov/i-want-to/view/weekly-crime-report/-folder-1474'
 
