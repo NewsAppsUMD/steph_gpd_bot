@@ -2,9 +2,11 @@ name: Scrape latest weekly crime reports
 
 on:
   push:
+    push:
   schedule:
     - cron: "0 6 * * 2"
   workflow_dispatch:
+
 
 jobs:
   scheduled:
