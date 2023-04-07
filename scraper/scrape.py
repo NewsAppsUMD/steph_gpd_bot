@@ -44,7 +44,21 @@ dfs = tabula.read_pdf(list_of_rows[0][0], pages = "all")
 #convert that pdf into a csv file
 tabula.convert_into(list_of_rows[0][0], "output.csv", pages = "all")
 
-#push that csv file to my repository
+slack_token = os.environ.get('SLACK_API_TOKEN')
 
+client = WebClient(token=slack_token)
+msg = "There's a new weekly crime report from the Greenbelt PD. See https://www.greenbeltmd.gov/government/departments-con-t/police/crime-reports/weekly-crime-report/-folder-1474"
+try:
+    response = client.chat_postMessage(
+        channel="slack-bots",
+        text=msg,
+        unfurl_links=True, 
+        unfurl_media=True
+    )
+    print("success!")
+except SlackApiError as e:
+    assert e.response["ok"] is False
+    assert e.response["error"]
+    print(f"Got an error: {e.response['error']}")
 
 
