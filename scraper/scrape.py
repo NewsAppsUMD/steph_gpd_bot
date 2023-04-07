@@ -45,6 +45,6 @@ dfs = tabula.read_pdf(list_of_rows[0][0], pages = "all")
 tabula.convert_into(list_of_rows[0][0], "output.csv", pages = "all")
 
 #push that csv file to my repository
-git add 
+
 
 
