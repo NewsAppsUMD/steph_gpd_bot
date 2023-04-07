@@ -30,12 +30,12 @@ for li in ul.find_all('li'):
             dict['date'] = a.get_text()
         #print(dict)
     urls_with_dates.append(dict)
-#print(urls_with_dates)!!!
+#print(urls_with_dates)
 
 for each in urls_with_dates:
     df = tabula.read_pdf(each['url'], pages="all")
     tabula.convert_into(each['url'], "output.csv", pages="all")
-    #print(df)
+    print(df)
 
 slack_token = os.environ.get('SLACK_API_TOKEN')
 
