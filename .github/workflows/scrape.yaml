@@ -27,5 +27,5 @@ jobs:
           timestamp=$(date -u)
           git commit -m "Latest data: ${timestamp}" || exit 0
           git push
-      - name: run bash sqlite command
-        run: bash sqlite_command.sh
+      #- name: run bash sqlite command
+        #run: bash sqlite_command.sh
