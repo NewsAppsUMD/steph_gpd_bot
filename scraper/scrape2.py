@@ -7,6 +7,8 @@ import requests
 import os
 from slack import WebClient
 from slack.errors import SlackApiError
+import datetime
+from datetime import date, timedelta
 
 url = 'https://www.greenbeltmd.gov/i-want-to/view/weekly-crime-report/-folder-1474'
 response = requests.get(url, headers={'User-Agent': 'Mozilla/5.0'})
@@ -35,7 +37,11 @@ for li in ul.find_all('li'):
 #print(urls_with_dates)
 
 latest_report = urls_with_dates[0]['date']
-second_latest_report = urls_with_dates[1]['date']
+today = date.today()
+yesterday = today - timedelta(days=1)
+#print(today)
+#print(yesterday)
+
 #print(latest_report)
 
 #For each dictionary (url-date pair), create a dataframe containing the contents that result from reading each pdf and converting it into a csv file.
@@ -48,11 +54,11 @@ slack_token = os.environ.get('SLACK_API_TOKEN')
 
 client = WebClient(token=slack_token)
 msg = "Greenbelt PD CrimeBot here."
-if latest_report != second_latest_report:
+if latest_report != yesterday:
     print("There's a new weekly crime report for {latest_report}.")
     #msg += "There were {} shootings and {}"
     #msg += "See the "
-elif latest_report == second_latest_report:
+elif latest_report == yesterday:
     print("No new report for now!")
 
 
