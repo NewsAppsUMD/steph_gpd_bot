@@ -34,25 +34,37 @@ for li in ul.find_all('li'):
     urls_with_dates.append(dict)
 #print(urls_with_dates)
 
+latest_report = urls_with_dates[0]['date']
+second_latest_report = urls_with_dates[1]['date']
+#print(latest_report)
+
 #For each dictionary (url-date pair), create a dataframe containing the contents that result from reading each pdf and converting it into a csv file.
-for each in urls_with_dates:
-    df = tabula.read_pdf(each['url'], pages="all")
-    tabula.convert_into(each['url'], "output.csv", pages="all")
+#for each in urls_with_dates:
+    #df = tabula.read_pdf(each['url'], pages="all")
+    #tabula.convert_into(each['url'], "output.csv", pages="all")
     #print(df)
 
 slack_token = os.environ.get('SLACK_API_TOKEN')
 
 client = WebClient(token=slack_token)
-msg = "There's a new weekly crime report from the Greenbelt PD. See https://www.greenbeltmd.gov/government/departments-con-t/police/crime-reports/weekly-crime-report/-folder-1474"
+msg = "Greenbelt PD CrimeBot here."
+if latest_report != second_latest_report:
+    print("There's a new weekly crime report for {latest_report}.")
+    #msg += "There were {} shootings and {}"
+    #msg += "See the "
+elif latest_report == second_latest_report:
+    print("No new report for now!")
+
+
 try:
-    response = client.chat_postMessage(
-        channel="slack-bots",
-        text=msg,
-        unfurl_links=True, 
-        unfurl_media=True
-    )
-    print("success!")
+    #response = client.chat_postMessage(
+        #channel="slack-bots",
+        #text=msg,
+        #unfurl_links=True, 
+        #unfurl_media=True
+    #)
+    #print("success!")
 except SlackApiError as e:
-    assert e.response["ok"] is False
-    assert e.response["error"]
-    print(f"Got an error: {e.response['error']}")
+    #assert e.response["ok"] is False
+    #assert e.response["error"]
+    #print(f"Got an error: {e.response['error']}")
