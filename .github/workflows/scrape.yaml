@@ -18,7 +18,7 @@ jobs:
       - name: run bash setup
         run: bash gpd_bot_setup.sh
       - name: run scraper
-        run: python scraper/scrape.py
+        run: python scraper/scrape2.py
       - name: Commit and push if it changed
         run: |-
           git config user.name "Automated"
