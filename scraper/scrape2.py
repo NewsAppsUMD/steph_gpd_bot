@@ -57,14 +57,14 @@ elif latest_report == second_latest_report:
 
 
 try:
-    #response = client.chat_postMessage(
-        #channel="slack-bots",
-        #text=msg,
-        #unfurl_links=True, 
-        #unfurl_media=True
-    #)
-    #print("success!")
+    response = client.chat_postMessage(
+        channel="slack-bots",
+        text=msg,
+        unfurl_links=True, 
+        unfurl_media=True
+    )
+    print("success!")
 except SlackApiError as e:
-    #assert e.response["ok"] is False
-    #assert e.response["error"]
-    #print(f"Got an error: {e.response['error']}")
+    assert e.response["ok"] is False
+    assert e.response["error"]
+    print(f"Got an error: {e.response['error']}")
