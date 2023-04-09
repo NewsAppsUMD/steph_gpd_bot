@@ -18,6 +18,8 @@ What I wanted it to do that it doesn't do:
 
 4. Ideally, the bot would add a csv of the latest weekly crime report to my repository each time a new report appeared. It's not clear to me that my bot does this as it stands, although I originally thought the "commit and push if it changed" job in my yaml file would do this. Was I misunderstanding?
 
+5. I don't seem to be getting a Slack message when I run my bot by pushing to my repo. Why not?
+
 General reflections:
 I'm disappointed that my bot doesn't do everything I wanted it to do, but I also feel as though I've gained skills every week and come a long way since the beginning. I think the technical aspects of building this bot were challenging enough for me that I didn't pay as much attention to more journalistic concerns as I would have liked. As I move forward with my final project, I hope to be more guided by potential journalistic uses of my bot and the app I will build from it.
 
