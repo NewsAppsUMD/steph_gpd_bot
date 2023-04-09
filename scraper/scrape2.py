@@ -60,7 +60,7 @@ yesterday = today - timedelta(days=1)
 most_recent = tabula.read_pdf(urls_with_dates[0]['url'], pages="all")
 tabula.convert_into(urls_with_dates[0]['url'], "latest_report.csv", pages="all")
 with open('latest_report.csv', 'r') as file:
-    reader = csv.DictReader(file2)
+    reader = csv.DictReader(file)
     weekly_incidents = sum(1 for row in reader)
     #print(weekly_incidents)
 
