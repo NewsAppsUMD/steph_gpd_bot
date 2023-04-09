@@ -9,6 +9,7 @@ from slack import WebClient
 from slack.errors import SlackApiError
 import datetime
 from datetime import date, timedelta
+import pandas as pd
 
 url = 'https://www.greenbeltmd.gov/i-want-to/view/weekly-crime-report/-folder-1474'
 response = requests.get(url, headers={'User-Agent': 'Mozilla/5.0'})
@@ -45,32 +46,38 @@ yesterday = today - timedelta(days=1)
 #print(latest_report)
 
 #For each dictionary (url-date pair), create a dataframe containing the contents that result from reading each pdf and converting it into a csv file.
-#for each in urls_with_dates:
-    #df = tabula.read_pdf(each['url'], pages="all")
-    #tabula.convert_into(each['url'], "output.csv", pages="all")
+for each in urls_with_dates:
+    tables = tabula.read_pdf(each['url'], pages="all")
+    df = [pd.DataFrame(table) for table in tables]
+    #tabula.convert_into(each['url'], "all_rows.csv", pages="all")
     #print(df)
 
-slack_token = os.environ.get('SLACK_API_TOKEN')
+latest_table = tabula.read_pdf(urls_with_dates[0][0], pages="all")
+latest_df = [pd.DataFrame(latest_table)]
+print(latest_df)
 
-client = WebClient(token=slack_token)
-msg = "Greenbelt PD CrimeBot here."
-if latest_report != yesterday:
-    print("There's a new weekly crime report for {latest_report}.")
-    #msg += "There were {} shootings and {}"
-    #msg += "See the "
-elif latest_report == yesterday:
-    print("No new report for now!")
+#weekly_incidents = len(latest_df)
 
 
-try:
-    response = client.chat_postMessage(
-        channel="slack-bots",
-        text=msg,
-        unfurl_links=True, 
-        unfurl_media=True
-    )
-    print("success!")
-except SlackApiError as e:
-    assert e.response["ok"] is False
-    assert e.response["error"]
-    print(f"Got an error: {e.response['error']}")
+
+#slack_token = os.environ.get('SLACK_API_TOKEN')
+#client = WebClient(token=slack_token)
+
+#msg = "Greenbelt PD CrimeBot here. "
+#if latest_report != yesterday:
+    #msg += (f"There's a new weekly crime report for {yesterday}. The Greenbelt PD reported {weekly_incidents} incidents.\n")
+#elif latest_report == yesterday:
+    #msg += ("No new report for now!")
+
+#try:
+    #response = client.chat_postMessage(
+        #channel="slack-bots",
+        #text=msg,
+        #unfurl_links=True, 
+        #unfurl_media=True
+    #)
+    #print("success!")
+#except SlackApiError as e:
+    #assert e.response["ok"] is False
+    #assert e.response["error"]
+    #print(f"Got an error: {e.response['error']}")

@@ -1,2 +1,2 @@
-sqlite-utils insert output.db output output.csv --csv
-datasette serve output.db
+sqlite-utils insert all_rows.db all_rows all_rows.csv --csv
+datasette serve all_rows.db
