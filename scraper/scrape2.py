@@ -51,11 +51,10 @@ yesterday = today - timedelta(days=1)
 
 #I'll use the below when I serve the complete scraped reports in Datasette.
 #For each dictionary (url-date pair), create a dataframe containing the contents that result from reading each pdf.
-#all_reports = []
 #for each in urls_with_dates:
-    #table = tabula.read_pdf(each['url'], pages="all")
-    #tabula.convert_into(each['url'], "all_reports.csv", pages="all")
-    #print(all_reports)
+    #df = tabula.read_pdf(each['url'], pages="all")
+    #tabula.convert_into(each['url'], "output.csv", pages="all")
+    #print(df)
 
 #Parse the pdf for the most recent report, make it into a csv, and count the number of rows (incidents).
 most_recent = tabula.read_pdf(urls_with_dates[0]['url'], pages="all")

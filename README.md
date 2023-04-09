@@ -1,13 +1,13 @@
 # steph_gpd_bot
 This bot will help me to harvest and analyze weekly crime data from the Greenbelt Police Department in Greenbelt, MD.
 
-April 8 turn-in: 
+April 8 (final) turn-in: 
 
-My big initial win was getting my bot to scrape the Greenbelt PD's website to create a table containing urls of all available weekly crime reports from 2023
+My big initial win was getting my bot to scrape the Greenbelt PD's website to (1) create a table containing urls of all available weekly crime reports from 2023 with their corresponding dates, (2) use Tabula-py to parse the pdf for the most recent report and convert it into a csv and (3) use sqlite-utils to create a database file that could then be served as a searchable version of the report in Datasette. 
 
-This week I tailored my yaml file to scrape the Greenbelt PD website on Tuesdays at 2 a.m. EST, since new weekly crime reports seem to be posted on Mondays. After setting up my SlackBot, I coded it to tell me whether or not a new weekly crime report has been posted (though see the caveat below) and, in cases where there is a new report, to say how many incidents were listed in the report and give a link to the new report. 
+Then I had to figure out how to get Tabula-py to loop through each url and parse all the pdfs without overwriting the previous ones. Inside the loop that I wrote the previous week, I created a list of dictionaries matching my urls and dates and identifying them as such and put this list of dictionaries in a container called urls_with_dates. I used Tabula-py to parse the url in each dictionary/row and amass all the records into a csv.
 
-I'm disappointed that I didn't accomplish everything I set out to do (again, see below). On the other hand, I think I've learned a lot from this project, and every time 
+The next tasks were to get my bot to automatically scrape on a schedule and send me Slack updates after it ran. I tailored my yaml file to scrape the Greenbelt PD website on Tuesdays at 2 a.m. EST, since new weekly crime reports seem to be posted on Mondays. After setting up my SlackBot, I coded it to tell me whether or not a new weekly crime report has been posted (though see the caveat below) and, in cases where there is a new report, to say how many incidents were listed in the report and give a link to the new report. 
 
 What I wanted it to do that it doesn't do:
 1. Right now, my bot's ability to tell me if the latest weekly crime report is new or not is dependent on the bot running only on Tuesdays, because I'm checking the date of the most recent available report against "yesterday." This assumes that the Greenbelt PD only posts new reports on Mondays (which I think is usually true) and does not gauge the newness of the most recent report by checking it against the last report the bot scraped. I'm not sure how to do the latter, but I'll work on that moving forward.
@@ -17,6 +17,9 @@ What I wanted it to do that it doesn't do:
 3. I can't rely on GitHub Actions to run my Datasette because Actions can't sustain a server, so right now I have to run my sqlite_command.sh file manually to use the Datasette function of my bot. This isn't necessarily a big deal, but I had hoped to run some canned SQL queries on the amalgamated data and had originally envisioned Datasette as the way to do this. This is something else for me to work on moving forward.
 
 4. Ideally, the bot would add a csv of the latest weekly crime report to my repository each time a new report appeared. It's not clear to me that my bot does this as it stands, although I originally thought the "commit and push if it changed" job in my yaml file would do this. Was I misunderstanding?
+
+General reflections:
+I'm disappointed that my bot doesn't do everything I wanted it to do, but I also feel as though I've gained skills every week and come a long way since the beginning. I think the technical aspects of building this bot were challenging enough for me that I didn't pay as much attention to more journalistic concerns as I would have liked. As I move forward with my final project, I hope to be more guided by potential journalistic uses of my bot and the app I will build from it.
 
 --
 
