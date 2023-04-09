@@ -8,7 +8,7 @@ import os
 from slack import WebClient
 from slack.errors import SlackApiError
 import datetime
-from datetime import date, timedelta
+from datetime import date, timedelta, datetime
 import pandas as pd
 
 url = 'https://www.greenbeltmd.gov/i-want-to/view/weekly-crime-report/-folder-1474'
@@ -38,46 +38,48 @@ for li in ul.find_all('li'):
 #print(urls_with_dates)
 
 latest_report = urls_with_dates[0]['date']
+date_obj = datetime.strptime(latest_report, "%B %d, %Y")
+formatted_latest_report = date_obj.strftime("%Y-%m-%d")
+
+#print(formatted_latest_report)
 today = date.today()
 yesterday = today - timedelta(days=1)
 #print(today)
 #print(yesterday)
 
-#print(latest_report)
-
 #For each dictionary (url-date pair), create a dataframe containing the contents that result from reading each pdf and converting it into a csv file.
-for each in urls_with_dates:
-    tables = tabula.read_pdf(each['url'], pages="all")
-    df = [pd.DataFrame(table) for table in tables]
+#for each in urls_with_dates:
+    #tables = tabula.read_pdf(each['url'], pages="all")
+    #df = [pd.DataFrame(table) for table in tables]
     #tabula.convert_into(each['url'], "all_rows.csv", pages="all")
     #print(df)
 
-latest_table = tabula.read_pdf(urls_with_dates[0][0], pages="all")
-latest_df = [pd.DataFrame(latest_table)]
-print(latest_df)
+table = tabula.read_pdf(urls_with_dates[0]['url'], pages="all")
+tabula.convert_into(urls_with_dates[0]['url'], "latest_report.csv", pages="all")
+with open('latest_report.csv', 'r') as file:
+    reader = csv.DictReader(file)
+    weekly_incidents = sum(1 for row in reader)
+    #print(weekly_incidents)
 
-#weekly_incidents = len(latest_df)
 
+slack_token = os.environ.get('SLACK_API_TOKEN')
+client = WebClient(token=slack_token)
 
+msg = "Greenbelt PD CrimeBot here. "
+if formatted_latest_report != yesterday:
+    msg += (f"There's a new weekly crime report for the week ending {formatted_latest_report}. The Greenbelt PD reported {weekly_incidents} incidents for that week. Find the report <{urls_with_dates[0]['url']}|here>.\n")
+elif formatted_latest_report == yesterday:
+    msg += ("No new report for now!")
 
-#slack_token = os.environ.get('SLACK_API_TOKEN')
-#client = WebClient(token=slack_token)
-
-#msg = "Greenbelt PD CrimeBot here. "
-#if latest_report != yesterday:
-    #msg += (f"There's a new weekly crime report for {yesterday}. The Greenbelt PD reported {weekly_incidents} incidents.\n")
-#elif latest_report == yesterday:
-    #msg += ("No new report for now!")
-
-#try:
-    #response = client.chat_postMessage(
-        #channel="slack-bots",
-        #text=msg,
-        #unfurl_links=True, 
-        #unfurl_media=True
-    #)
-    #print("success!")
-#except SlackApiError as e:
-    #assert e.response["ok"] is False
-    #assert e.response["error"]
-    #print(f"Got an error: {e.response['error']}")
+try:
+    response = client.chat_postMessage(
+        channel="slack-bots",
+        text=msg,
+        unfurl_links=True, 
+        unfurl_media=True
+    )
+    print("success!")
+except SlackApiError as e:
+    assert e.response["ok"] is False
+    assert e.response["error"]
+    print(f"Got an error: {e.response['error']}")

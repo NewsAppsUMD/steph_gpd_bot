@@ -5,6 +5,7 @@ import requests
 import os
 from slack import WebClient
 from slack.errors import SlackApiError
+import pandas as pd
 
 url = 'https://www.greenbeltmd.gov/i-want-to/view/weekly-crime-report/-folder-1474'
 
@@ -39,12 +40,12 @@ writer.writerow(["url", "date"])
 writer.writerows(list_of_rows)
 
 #read pdf of newest weekly crime report
-dfs = tabula.read_pdf(list_of_rows[0][0], pages = "all")
-
+tables = tabula.read_pdf(list_of_rows[0][0], pages = "all")
+latest_df = [pd.DataFrame(tables) for table in tables]
+print(latest_df)
 #convert that pdf into a csv file
-tabula.convert_into(list_of_rows[0][0], "output.csv", pages = "all")
+#tabula.convert_into(list_of_rows[0][0], "output.csv", pages = "all")
 
-print(list_of_rows)
 
 #slack_token = os.environ.get('SLACK_API_TOKEN')
 #client = WebClient(token=slack_token)
