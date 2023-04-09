@@ -1,6 +1,25 @@
 # steph_gpd_bot
 This bot will help me to harvest and analyze weekly crime data from the Greenbelt Police Department in Greenbelt, MD.
 
+April 8 turn-in: 
+
+My big initial win was getting my bot to scrape the Greenbelt PD's website to create a table containing urls of all available weekly crime reports from 2023
+
+This week I tailored my yaml file to scrape the Greenbelt PD website on Tuesdays at 2 a.m. EST, since new weekly crime reports seem to be posted on Mondays. After setting up my SlackBot, I coded it to tell me whether or not a new weekly crime report has been posted (though see the caveat below) and, in cases where there is a new report, to say how many incidents were listed in the report and give a link to the new report. 
+
+I'm disappointed that I didn't accomplish everything I set out to do (again, see below). On the other hand, I think I've learned a lot from this project, and every time 
+
+What I wanted it to do that it doesn't do:
+1. Right now, my bot's ability to tell me if the latest weekly crime report is new or not is dependent on the bot running only on Tuesdays, because I'm checking the date of the most recent available report against "yesterday." This assumes that the Greenbelt PD only posts new reports on Mondays (which I think is usually true) and does not gauge the newness of the most recent report by checking it against the last report the bot scraped. I'm not sure how to do the latter, but I'll work on that moving forward.
+
+2. I tried for this turn-in to get my Slack message to say how many incidents the Greenbelt PD had reported in all of 2023, as well as how many it reported in the most recent weekly crime report. Since I had trouble converting what I parsed in Tabula into Pandas dataframes, this would have required me to create a csv file with the contents of all the weekly crime reports and to count the rows. I managed to create an object called all_reports that contains all this information, but I couldn't figure out how to make it a single csv. (I thought I had done this before, but maybe I never had the csv for all the data?)
+
+3. I can't rely on GitHub Actions to run my Datasette because Actions can't sustain a server, so right now I have to run my sqlite_command.sh file manually to use the Datasette function of my bot. This isn't necessarily a big deal, but I had hoped to run some canned SQL queries on the amalgamated data and had originally envisioned Datasette as the way to do this. This is something else for me to work on moving forward.
+
+4. Ideally, the bot would add a csv of the latest weekly crime report to my repository each time a new report appeared. It's not clear to me that my bot does this as it stands, although I originally thought the "commit and push if it changed" job in my yaml file would do this. Was I misunderstanding?
+
+--
+
 April 1 turn-in:
 What I started with this week was a Python script that used Beautiful Soup to identify the final <ul> tag on the webpage listing Greenbelt Police Department weekly crime reports, drill down into that <ul> to iterate over each <a> tag corresponding to an individual report, and use the contents of those <a> tags to create a table listing the url for each report and its corresponding date. 
 

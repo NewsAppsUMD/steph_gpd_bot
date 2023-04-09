@@ -37,27 +37,31 @@ for li in ul.find_all('li'):
     urls_with_dates.append(dict)
 #print(urls_with_dates)
 
+#isolate the date of the latest report and convert it into Y-M-D format
 latest_report = urls_with_dates[0]['date']
 date_obj = datetime.strptime(latest_report, "%B %d, %Y")
 formatted_latest_report = date_obj.strftime("%Y-%m-%d")
-
 #print(formatted_latest_report)
+
+#set today and yesterday so I can check the date of the latest report against the most recent Monday (which is when I would expect a new report to be posted)
 today = date.today()
 yesterday = today - timedelta(days=1)
 #print(today)
 #print(yesterday)
 
-#For each dictionary (url-date pair), create a dataframe containing the contents that result from reading each pdf and converting it into a csv file.
+#I'll use the below when I serve the complete scraped reports in Datasette.
+#For each dictionary (url-date pair), create a dataframe containing the contents that result from reading each pdf.
+#all_reports = []
 #for each in urls_with_dates:
-    #tables = tabula.read_pdf(each['url'], pages="all")
-    #df = [pd.DataFrame(table) for table in tables]
-    #tabula.convert_into(each['url'], "all_rows.csv", pages="all")
-    #print(df)
+    #table = tabula.read_pdf(each['url'], pages="all")
+    #tabula.convert_into(each['url'], "all_reports.csv", pages="all")
+    #print(all_reports)
 
-table = tabula.read_pdf(urls_with_dates[0]['url'], pages="all")
+#Parse the pdf for the most recent report, make it into a csv, and count the number of rows (incidents).
+most_recent = tabula.read_pdf(urls_with_dates[0]['url'], pages="all")
 tabula.convert_into(urls_with_dates[0]['url'], "latest_report.csv", pages="all")
 with open('latest_report.csv', 'r') as file:
-    reader = csv.DictReader(file)
+    reader = csv.DictReader(file2)
     weekly_incidents = sum(1 for row in reader)
     #print(weekly_incidents)
 
@@ -67,7 +71,7 @@ client = WebClient(token=slack_token)
 
 msg = "Greenbelt PD CrimeBot here. "
 if formatted_latest_report != yesterday:
-    msg += (f"There's a new weekly crime report for the week ending {formatted_latest_report}. The Greenbelt PD reported {weekly_incidents} incidents for that week. Find the report <{urls_with_dates[0]['url']}|here>.\n")
+    msg += (f"There's a new weekly crime report for the week ending {formatted_latest_report}. The Greenbelt PD reported {weekly_incidents} incidents for <{urls_with_dates[0]['url']}|that week>.\n")
 elif formatted_latest_report == yesterday:
     msg += ("No new report for now!")
 
