@@ -18,6 +18,8 @@ jobs:
       - name: run bash setup
         run: bash gpd_bot_setup.sh
       - name: run scraper
+        env:
+            SLACK_API_TOKEN: ${{ secrets.SLACK_API_TOKEN }}
         run: python scraper/scrape2.py
       - name: Commit and push if it changed
         run: |-
