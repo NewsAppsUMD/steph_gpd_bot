@@ -2,7 +2,7 @@
 name: Scrape latest weekly crime reports
 on:
   push:
-    push: null
+    push: 
   schedule:
     - cron: 0 6 * * 2
   workflow_dispatch: null
@@ -26,6 +26,7 @@ jobs:
           git add -A
           timestamp=$(date -u)
           git commit -m "Latest data: ${timestamp}" || exit 0
+          git pull origin main
           git push
       #- name: run bash sqlite command
         #run: bash sqlite_command.sh
