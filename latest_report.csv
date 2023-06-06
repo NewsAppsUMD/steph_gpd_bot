@@ -1,79 +1,67 @@
 Date,Time,Incident Type,Location,Beat,Narrative
-05/15/2023,06:01,ASSAULT COMBINED,,,Domestic.
-05/15/2023,06:58,THEFT FROM AUTO,6000 Springhill Dr,GB2,Passenger door pried open with tool and personal property stolen.
-05/15/2023,07:26,STOLEN VEH,7500 Mandan Rd,GB3,2012 blue Hyundai Sonata (MD plate: 26053CH) stolen.
-05/15/2023,14:28,VANDALISM,7600 Hanover Pkwy,GB3,"Driver side back window broken, car rummaged through, nothing taken."
-05/15/2023,14:29,VANDALISM,6100 Breezewood Dr,GB2,"Driver side passenger window broken, car rummaged through, nothing taken."
-05/15/2023,14:58,VANDALISM,9300 Edmonston Rd,GB2,Four cars in the parking lot had the rear windows broken and the cars rummaged through.
-05/15/2023,16:57,VANDALISM,7700 Hanover Pkwy,GB3,"Rear right passenger window broken, nothing taken."
-05/15/2023,19:28,THEFT FROM AUTO,6000 Springhill Dr,GB2,Tools stolen from unlocked car.
-05/15/2023,20:59,SIGNAL 100,,,Mental Health Diversion.
-05/16/2023,15:53,THEFT REPORT,6000 Greenbelt Rd Wb,GB2,20-year-old man arrested for embezzling funds from his workplace.
-05/16/2023,18:54,BREAK IN IN PROGRESS,5300 S Center Dr,GB2,"Victim returned to residence and noticed the front door was open and items were thrown around in the bedrooms. Officers searchedthe home but no one was found. Personal property was stolen and there was no signs of forced entry."
-05/16/2023,20:37,THEFT FROM AUTO,6100 Springhill Ter,GB2,Handicap placard stolen.
-05/16/2023,21:08,FOUND STOLEN VEH,6000 Springhill Dr,GB2,Stolen 2015 Hyundai Elantra found with ignition damage.
-05/17/2023,05:12,THEFT FROM AUTO,7700 Mandan Rd,GB3,Kia Optima had damaged lock after owner scared off unknown people away from the car.
-05/17/2023,05:43,THEFT FROM AUTO,7500 Mandan Rd,GB3,All four tires stolen from 2023 Honda Civic.
-05/17/2023,08:08,VANDALISM,7800 Mandan Rd,GB3,"Car sunroof broken, nothing taken."
-05/17/2023,09:03,STOLEN VEH,6200 Springhill Ct,GB2,White 2020 Ram Pro Master 2500 (DC plate: C81898) stolen.
-05/17/2023,09:28,FRAUD,Unit Ridge Rd,GB1,Check fraud.
-05/17/2023,10:23,THEFT FROM AUTO,6900 Hanover Pkwy,GB3,"Sunroof broken, personal property taken."
-05/17/2023,13:18,THEFT REPORT,7500 Greenbelt Rd Eb,GB3,Commercial theft.
-05/17/2023,15:26,SHOPLIFTING,6100 Greenbelt Rd Wb,GB2,Commercial theft.
-05/17/2023,15:55,SHOPLIFTING,6100 Greenbelt Rd Wb,GB2,Commercial theft.
-05/17/2023,16:08,VANDALISM,6300 Golden Triangle Dr,GB1,Rear windows broken of two cars.
-05/17/2023,20:12,STOLEN VEH,6000 Springhill Dr,GB2,2006 silver Suberu Tribeca (MD plate: 3FJ9069) stolen.
-05/17/2023,21:12,THEFT FROM AUTO,6100 Breezewood Ct,GB2,All four of his wheels and tires of 2018 Toyota Camry stolen.
-05/18/2023,00:41,DOMESTIC COMBINED,,,Domestic.
-05/18/2023,07:10,THEFT FROM AUTO,5900 Cherrywood Ter,GB2,"Passenger window broken, work tools stolen."
-05/18/2023,07:39,VANDALISM,7200 Mandan Rd,GB3,"Rear right passenger window broken, nothing taken."
-05/18/2023,08:21,STOLEN VEH,5900 Cherrywood Ter,GB2,"2013 Silver Hyundai Sonata stolen, tracked with a low jack tracker and found in Lanham."
-05/18/2023,10:48,SUSPICIOUS AUTO,5900 Cherrywood Ter,GB2,Stolen Hyundai Sonata found.
-05/18/2023,11:06,ARMED PERSON,5800 Cherrywood Ln,GB2,"Man pointed a curved pocket knife at maitenance worker after being asked to leave the property. Officers searched the area but didnot find the man."
-05/18/2023,16:31,FRAUD,7600 Greenbelt Rd Eb,GB3,Credit card fraud.
-05/18/2023,17:31,CHECK WELFARE COMBINED,,,Mental Health Diversion.
-05/18/2023,18:29,DISORDERLY,7200 S Ora Ct,GB3,Juvenile fight.
-05/18/2023,19:17,THEFT FROM AUTO,Mandan Rd / Hanover Pkwy,GB3,Personal property stolen from vehicle.
-05/18/2023,22:42,STOLEN VEH,6100 Greenbelt Rd Wb,GB2,Hyundai Elantra (MD plate: 3FA6515) stolen.
-05/18/2023,23:16,BREAK IN IN PROGRESS,6000 Springhill Dr,GB2,"Vacant unit window broken, officers search the unit but found no one inside."
-05/19/2023,04:27,DOMESTIC,,,Domestic.
-05/19/2023,05:04,STOLEN VEH,6900 Hanover Pkwy,GB3,Blue Hyundai Sonata (MD plate: 5DE7235) stolen.
-05/19/2023,05:21,VANDALISM,9000 Breezewood Ter,GB2,"Passenger side front window broken, nothing taken."
-05/19/2023,07:29,STOLEN VEH,6600 Lake Park Dr,GB3,Black 2013 Hyundai Sonata (MD plate: 4BD8223) stolen.
-05/19/2023,07:41,THEFT FROM AUTO,8100 Lakecrest Dr,GB1,"Passenger front window broken, tools stolen."
-05/19/2023,07:49,VANDALISM,9100 Edmonston Ct,GB2,"Car window broken, nothing taken."
-05/19/2023,08:50,VANDALISM,7840 Lakecrest Dr,GB1,"Right front car window broken, nothing taken."
-05/19/2023,13:11,SHOPLIFTING,7595 Greenbelt Rd Eb,GB3,Commercial theft.
-05/19/2023,14:18,THEFT FROM AUTO,6600 Lake Park Dr,GB3,"Rear right passenger side window broken, personal property stolen."
-05/19/2023,15:13,MISSING PERSON,9300 Edmonston Rd,GB2,"Juvenile girl reported missing, later located."
-05/19/2023,17:13,FRAUD,5900 Cherrywood Ln,GB2,EBT card fraud.
-05/19/2023,22:05,CHECK WELFARE,,,Mental Health Diversion.
-05/20/2023,02:48,T - Traffic Stop,Crescent Rd / Kenilworth Ave Nb,GB1,DUI Arrest.
-05/20/2023,05:22,THEFT FROM AUTO,9100 Springhill Ln,GB2,"Steering wheel airbags stolen from 2017 Honda Accord, 2014 Honda CRV, and 2017 Honda Accord."
-05/20/2023,07:24,THEFT REPORT,6200 Breezewood Dr,GB2,Steering wheel airbags stolen from 2017 blue Honda Civic and 2013 Honda Civic.
-05/20/2023,07:56,STOLEN VEH,9100 Edmonston Rd,GB2,2007 blue Chevrolet Silverado (MD plate: 9AW2544) stolen.
-05/20/2023,08:48,SUSPICIOUS PERSON,5700 Cherrywood Ln,GB2,Man issued a criminal citation for marijuana in an amount over civil use.
-05/20/2023,10:28,THEFT REPORT,6000 Breezewood Dr,GB2,Steering wheel airbag stolen from 2017 Honda Civic.
-05/20/2023,18:12,STOLEN VEH,7200 S Ora Ct,GB3,2018 Kia Sportage (MD plate: 8EK8228) stolen.
-05/20/2023,18:32,SHOOTING,6200 Springhill Dr,GB2,"On May 20, 2023, at approximately 6:32 pm, GPD was notified of a walk-in gunshot wound victim at a local hospital. The victim, a 25-year-old man, reported he was shot in an attempted carjacking in the 6200 block of Springhill Dr. Officers located the scene and areinvestigating. At this time, the victim’s injuries appear to be non-life-threatening. The suspects are described as two teenage boys,one light-skin black male wearing all black, and one dark-skin black male wearing a white hoodie and possibly low cut hair or twists."
-05/21/2023,03:49,SUSPICIOUS AUTO,Cherrywood Ln / Breezewood Dr,GB2,DUI Arrest.
-05/21/2023,06:27,THEFT FROM AUTO,Unit Ridge Rd,GB1,Catalytic converter stolen from 2003 Honda Odyssey.
-05/21/2023,06:44,DOMESTIC,,,Domestic.
-05/21/2023,08:38,THEFT FROM AUTO,5900 Cherrywood Ter,GB2,"Rock thrown through the rear window of car, nothing taken."
-05/21/2023,08:54,VANDALISM,9000 Breezewood Ter,GB2,"Rear passenger window broken, nothing taken."
-05/21/2023,09:20,THEFT FROM AUTO,9100 Edmonston Rd,GB2,Car broken into and handgun stolen from backseat.
-05/21/2023,09:25,THEFT FROM AUTO,7200 Hanover Dr,GB3,"Rear passenger window broken, personal property stolen."
-05/21/2023,09:29,VANDALISM,6300 Golden Triangle Dr,GB1,Two cars had the rear windows broken.
-05/21/2023,09:39,THEFT FROM AUTO,6600 Lake Park Dr,GB3,"Two cars had the passenger windows broken, personal property stolen."
-05/21/2023,10:12,THEFT FROM AUTO,7800 Walker Dr,GB1,"Front passenger window broken, personal property stolen."
-05/21/2023,10:40,VANDALISM,9100 Springhill Ln,GB2,"Passenger window broken, nothing taken."
-05/21/2023,10:48,THEFT FROM AUTO,Unit Ridge Rd,GB1,Catalytic converters stolen from 2006 Honda Element and 2006 Toyota Prius.
-05/21/2023,10:54,VANDALISM,9000 Breezewood Ter,GB2,"Rear passenger window broken, nothing taken."
-05/21/2023,13:51,THEFT FROM AUTO,6300 Golden Triangle Dr,GB1,"Rear window broken, personal property stolen."
-05/21/2023,14:17,THEFT FROM AUTO,200 Lakeside Dr,GB1,Catalytic converter stolen from 2000 Honda Odyssey.
-05/21/2023,14:35,VANDALISM,6200 Springhill Ct,GB2,"Rear driver window broken, personal property stolen."
-05/21/2023,15:42,THEFT REPORT,Unit Ridge Rd,GB1,Catalytic converter stolen from Honda Element.
-05/21/2023,16:04,FRAUD,6100 Greenbelt Rd Wb,GB2,Credit card fraud.
-05/21/2023,17:16,THEFT REPORT,7400 Greenway Center Dr,GB3,"Back passenger side windows of two cars broken, personal property stolen."
-05/21/2023,18:53,THEFT FROM AUTO,9100 Edmonston Rd,GB2,"Front passenger side window broken, handgun stolen."
-05/21/2023,22:42,ROBBERY,7900 Good Luck Rd,GB3,"On May 21, 2023 at approximately 10:40 pm, officers responded to the 7-11 located in the 7900 block of Good Luck Rd for acommercial armed robbery. The suspect walked into the business, pointed a black handgun at employees; and demanded money."
+05/22/2023,03:45,"CHECK WELFARECOMBINED",,,Mental Health Diversion.
+05/22/2023,06:50,THEFT FROM AUTO,6300 Golden Triangle Dr,GB1,"Car's right passenger window broken, handicap placard stolen. While checking the rest of the parking lot, officers found two other cars withwindows broken."
+05/22/2023,07:17,VANDALISM,7200 Hanover Dr,GB3,"Rear passenger window broken, car rummaged through, nothing of value taken."
+05/22/2023,07:38,VANDALISM,Unit Ridge Rd,GB1,Front passenger window broken.
+05/22/2023,09:24,THEFT FROM AUTO,6200 Springhill Ct,GB2,"Rear windshield broken, personal property stolen."
+05/22/2023,09:47,VANDALISM,7400 Greenway Center Dr,GB3,Two cars in the parking lot had the rear driver side windows broken.
+05/22/2023,10:17,THEFT REPORT,100 Centerway,GB1,Commercial theft.
+05/22/2023,10:24,THEFT FROM AUTO,Unit Ridge Rd,GB1,Catalytic converter stolen from 2001 Honda Accord.
+05/22/2023,17:23,"REPORTED CITROBBERY",6100 Breezewood Ct,GB2,"On May 22, 2023 at approximately 5:23 pm, officers responded to an armed robbery in the 6100 block of Breezewood Ct. The suspect isdescribed as a black male with a blue shirt and blue jeans armed with a black handgun. No injuries were reported."
+05/22/2023,19:25,SHOPLIFTING,7400 Greenbelt Rd Eb,GB3,Commercial theft.
+05/22/2023,22:21,THEFT FROM AUTO,100 Northway,GB1,Catalytic converter stolen from 2006 Toyota Prius.
+05/22/2023,22:43,THEFT FROM AUTO,Unit Gardenway,GB1,Catalytic converter stolen from 2003 Toyota Prius.
+05/22/2023,22:47,STOLEN VEH,7700 Hanover Pkwy,GB3,Brown Hyundai Sonata (MD plate: 9DA9175) stolen.
+05/23/2023,02:50,THEFT FROM AUTO,9100 Edmonston Rd,GB2,All four tires stolen from 2021 Toyota Corolla.
+05/23/2023,05:43,THEFT FROM AUTO,5800 Cherrywood Ln,GB2,All four wheels stolen from 2023 Toyota Camry.
+05/23/2023,10:53,FRAUD,9000 Breezewood Ter,GB2,Gift card and wire fraud.
+05/23/2023,11:15,SUSPICIOUS AUTO,Unit Southway,GB1,"Car found with a damaged steering wheel column and the rear window broken, impounded for safekeeping."
+05/23/2023,11:18,FOUND,5700 Greenbelt Metro Dr,GB2,"Stolen car found with ignition damage, impounded for safekeeping."
+05/23/2023,13:01,STOLEN VEH,7500 Greenway Center Dr,GB3,2019 Kia Sorento (MD plate: 5EC2077) stolen.
+05/23/2023,15:14,STOLEN VEH,7400 Greenway Center Dr,GB3,2004 white Chevy Trailblazer (MD plate: 9ET0211) stolen.
+05/23/2023,17:35,MISSING PERSON,5800 Cherrywood Ln,GB2,"Juvenile reported missing, later located."
+05/23/2023,18:00,VANDALISM,7900 Vanity Fair Dr,GB1,Glass door shattered by a rock.
+05/23/2023,21:17,THEFT FROM AUTO,5900 Cherrywood Ln,GB2,All four tires stolen from Honda Civic.
+05/23/2023,22:56,STOLEN VEH,6000 Cherrywood Ct,GB2,2021 KIA Forte (MD plate: T1344298) stolen.
+05/23/2023,23:38,ARMED PERSON,7500 Greenbelt Rd Eb,GB3,37-year-old man arrested for first and second-degree assault after threatening employees of restaurant.
+05/24/2023,02:56,VANDALISM,6000 Greenbelt Rd Wb,GB2,"Two dumpsters set on fire, no damages to surrounding buildings found."
+05/24/2023,06:01,THEFT FROM AUTO,6200 Breezewood Dr,GB2,"Trunk pried open, tools stolen."
+05/24/2023,06:31,THEFT FROM AUTO,100 Westway,GB1,All four tires stolen from Honda Civic.
+05/24/2023,07:43,THEFT FROM AUTO,6700 Springshire Way,GB3,Catalytic converter stolen from 2001 Honda Accord.
+05/24/2023,07:43,ATT STOLEN VEH,9100 Edmonston Ct,GB2,"2009 Ford E250 had a broken lock on the front passenger door, and damage to the ignition."
+05/24/2023,09:11,VANDALISM,8000 Greenbelt Station Pkwy,GB2,Five cars in parking lot had windows broken.
+05/24/2023,11:10,THEFT FROM AUTO,7800 Somerset Ct,GB3,Catalytic converter stolen from1999 Honda Accord.
+05/24/2023,11:15,SHOPLIFTING,7500 Greenbelt Rd Eb,GB3,Commercial theft.
+05/24/2023,16:07,THEFT REPORT,8000 Craddock Rd,GB3,Catalytic converter stolen from 2008 Toyota Prius.
+05/24/2023,16:58,THEFT FROM AUTO,9000 Breezewood Ter,GB2,"Personal property stolen from vehicle, no sign of forced entry."
+05/24/2023,18:01,STOLEN VEH,6900 Greenbelt Rd Wb,GB1,Lime Green Kia Soul (MD plate: 9CA7953) stolen.
+05/24/2023,22:32,ROBBERY,5900 Cherrywood Ter,GB2,"On May 24, 2023 at 10:32 pm, Greenbelt Police officers responded to the 5900 block of Cherrywood Ter for the report of an armed robbery. Thevictim reported two males (unknown age) robbed the victim at gunpoint and took the victim’s Dyna Glo Grill."
+05/25/2023,06:26,STOLEN VEH,7900 Good Luck Rd,GB3,Burgundy 2016 Toyota Highlander (MD plate: 36001CJ) stolen after it was left unattended and unlocked with the key in the ignition.
+05/25/2023,08:25,THEFT FROM AUTO,7800 Somerset Ct,GB3,Catalytic converter stolen from 2009 Toyota Prius.
+05/25/2023,08:44,FRAUD,100 Julian Ct,GB1,Gift card fraud.
+05/25/2023,11:49,THEFT FROM AUTO,Unit Lakeside Dr,GB1,Catalytic converter stolen from 2003 Honda Odyssey.
+05/25/2023,15:48,THEFT REPORT,7500 Greenbelt Rd Eb,GB3,Commercial theft.
+05/25/2023,17:05,THEFT FROM AUTO,7810 Walker Dr,GB1,"Rear passenger window broken, car rummaged through."
+05/26/2023,01:22,CHECK WELFARE,6200 Springhill Ct,GB2,Mental Health Diversion.
+05/26/2023,09:58,THEFT FROM AUTO,9100 Springhill Ln,GB2,"Personal property stolen from vehicle, no sign of forced entry."
+05/26/2023,10:17,FRAUD,6600 Lake Park Dr,GB3,Check fraud.
+05/26/2023,16:35,STOLEN VEH,7500 Greenway Center Dr,GB3,
+05/26/2023,21:49,DOMESTIC,,,Domestic.
+05/26/2023,22:04,FOUND,400 Ridge Rd,GB1,Missing juvenile located.
+05/26/2023,23:07,SUSPICIOUS AUTO,7900 Candlewood Pl,GB3,Stolen Kia found with the rear passenger side window broken and the ignition damaged.
+05/27/2023,01:12,T - Traffic Stop,Greenbelt Rd Eb / Cunningham Dr,,DUI Arrest.
+05/27/2023,05:53,VANDALISM,7200 Hanover Dr,GB3,Hotel property damaged during fight.
+05/27/2023,07:42,ASSAULT,,,Domestic.
+05/27/2023,07:52,STOLEN VEH,9300 Edmonston Rd,GB2,2013 blue Hyundai Sonata (MD plate: 1AX5914) stolen.
+05/27/2023,10:18,FRAUD,6200 Springhill Dr,GB2,Identity theft.
+05/27/2023,11:14,STOLEN VEH,9100 Edmonston Rd,GB2,2014 Hyundai Sonata (MD plate: 8EE4681) stolen.
+05/27/2023,14:59,SHOPLIFTING,6100 Greenbelt Rd Wb,GB2,Commercial theft.
+05/27/2023,16:10,THEFT FROM AUTO,6100 Greenbelt Rd Wb,GB2,"Rear passenger window broken, personal property stolen."
+05/27/2023,17:18,THEFT FROM AUTO,6000 Greenbelt Rd Wb,GB2,"Rear left passenger-side window broken, personal property stolen."
+05/27/2023,18:48,DOMESTIC,,,Domestic.
+05/28/2023,03:24,SUSPICIOUS AUTO,100 Westway,GB1,"Hyundai Sonata found with front end damage, rear passenger side window broken, mand the ignition damaged."
+05/28/2023,04:55,THEFT REPORT,6400 Ivy Ln,GB2,Personal property stolen after it was dropped in parking lot.
+05/28/2023,11:46,MISSING PERSON,6000 Cherrywood Ct,GB2,"16-year-old Jamay Isaiah Parker (B/M, 5’10, 130 lbs) was last seen on May 27, 2023, at approximately 12:32 pm in the 6003 block of CherrywoodCt, wearing a black hooded sweatshirt, dark gray sweatpants, black Nike boots, and carrying a gray book bag. The critical factor is age. If you seethe this person, please contact the Greenbelt Police Department at (301) 474-7200."
+05/28/2023,16:43,VANDALISM,Unit Westway,GB1,2018 White Hyundai Sonata had the rear passenger window broken and the ignition damaged.
+05/28/2023,18:22,THEFT FROM AUTO,Ridge Rd / Westway,GB1,Catalytic converter stolen from 2001 Honda Accord.
+05/28/2023,19:11,STOLEN VEH,8200 Canning Ter,GB3,2017 Toyota RAV4 (MD plate: 2DB2528) stolen.
